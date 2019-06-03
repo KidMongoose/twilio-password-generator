@@ -31,7 +31,7 @@ def sent():
    if request.method == 'POST':
        form = request.form
        passwd = generate_password(int(request.form['password_length_field']))
-       message = client.messages.create(body='Hello from Password Generator. Your password is: \n{}'.format(passwd), from_='+17272059874', to="+{}".format(str(request.form['telephone_number_field'])))
+       message = client.messages.create(body='Hello from Password Generator. Your password is: \n{}'.format(passwd), from_='TwILIO TELEPHONE NUMBER', to="+{}".format(str(request.form['telephone_number_field'])))
        return render_template('sent.html', form = form)
    
 
