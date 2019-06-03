@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="content">
+    <h1>Password Generator</h1>
+    <h3>Text you or your friend a strong random password </h3>
+   <form method="post" action="/sent">
+      {{ form.csrf_token }}
+      {{ form.telephone_number_field(class='numberFld', placeholder=' Telephone number (ex. 13231234567)', required=true, pattern="[0-9]{1}[0-9]{3}[0-9]{3}[0-9]{4}") }}<br>
+      {{ form.password_length_field(class='numberFld', placeholder=' Password Length')}}<br>
+      {{ form.send(id='') }}
+
+   </form>
+</div>
+{% endblock %}

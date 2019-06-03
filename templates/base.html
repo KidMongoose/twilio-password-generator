@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+   <html>
+     <head>
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <title>{{ title }}</title>
+       <link rel="stylesheet" href="https://use.typekit.net/amv3dzy.css">
+       <link rel="stylesheet" href="{{ url_for('static', filename='stylesheets/app.css')}}">
+       <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+       <script src="{{ url_for('static', filename='javascript/app.js')}}"></script>
+     </head>
+     <body>
+       {% block content %}{% endblock %}
+     </body>
+   </html>

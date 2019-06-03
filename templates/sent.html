@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="content">
+   <!-- <p>Your password length is: {{ form.password_length_field  }} {{ form.telephone_number_field }}and has been text to you</p> -->
+   <h1>Password sent!</h1>
+   <p>Your password has been text to the number you provided</p>
+   <span><a href="{{ url_for('index')}}">Go Back</a></span>
+</div>
+{% endblock %}
